@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnbroadVC" customModule="Watchify_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="47L-Z2-QKu" id="fLC-qe-5lG"/>
+                <outlet property="pageControl" destination="nab-js-p0A" id="UgQ-pL-zY9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="WH7-Pu-53b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqf-y4-1d4">
+                    <rect key="frame" x="32" y="778" width="329" height="40"/>
+                    <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="CSp-NR-RKv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Bắt đầu"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnNextHandle:" destination="-1" eventType="touchUpInside" id="d91-PI-EOe"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="47L-Z2-QKu">
+                    <rect key="frame" x="0.0" y="59" width="406" height="629"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Tdx-4S-zM5">
+                        <size key="itemSize" width="400" height="400"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nab-js-p0A">
+                    <rect key="frame" x="138" y="712" width="116" height="26"/>
+                    <connections>
+                        <action selector="pageControlTapHandle:" destination="-1" eventType="valueChanged" id="845-vy-TP5"/>
+                    </connections>
+                </pageControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.82352941176470584" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="47L-Z2-QKu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="0BV-3h-Y5u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Iqf-y4-1d4" secondAttribute="bottom" id="92u-ZA-PPb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nab-js-p0A" secondAttribute="trailing" constant="139" id="Ged-Hq-Euw"/>
+                <constraint firstItem="nab-js-p0A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="138" id="IxP-7E-KNQ"/>
+                <constraint firstItem="Iqf-y4-1d4" firstAttribute="top" secondItem="nab-js-p0A" secondAttribute="bottom" constant="40" id="JTV-eT-gNL"/>
+                <constraint firstItem="Iqf-y4-1d4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="LTo-b5-MbJ"/>
+                <constraint firstItem="47L-Z2-QKu" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="13" id="RTW-kh-KQo"/>
+                <constraint firstItem="47L-Z2-QKu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TYV-Bd-lhw"/>
+                <constraint firstItem="nab-js-p0A" firstAttribute="top" secondItem="47L-Z2-QKu" secondAttribute="bottom" constant="24" id="XJb-hV-iHy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Iqf-y4-1d4" secondAttribute="trailing" constant="32" id="m4z-Ro-cxG"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>

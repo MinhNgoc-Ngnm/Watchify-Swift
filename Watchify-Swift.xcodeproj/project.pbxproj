@@ -9,21 +9,40 @@
 /* Begin PBXBuildFile section */
 		F57E06722D57449B000BA618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E06712D57449B000BA618 /* AppDelegate.swift */; };
 		F57E06742D57449B000BA618 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E06732D57449B000BA618 /* SceneDelegate.swift */; };
-		F57E06762D57449B000BA618 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E06752D57449B000BA618 /* ViewController.swift */; };
-		F57E06792D57449B000BA618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57E06772D57449B000BA618 /* Main.storyboard */; };
 		F57E067B2D57449C000BA618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F57E067A2D57449C000BA618 /* Assets.xcassets */; };
 		F57E067E2D57449C000BA618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57E067C2D57449C000BA618 /* LaunchScreen.storyboard */; };
+		F57E06872D57456F000BA618 /* OnbroadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E06862D57456F000BA618 /* OnbroadVC.swift */; };
+		F57E06892D57457A000BA618 /* OnbroadVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57E06882D57457A000BA618 /* OnbroadVC.xib */; };
+		F57E068C2D574910000BA618 /* UIButton+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E068B2D574910000BA618 /* UIButton+Border.swift */; };
+		F57E06902D574AA2000BA618 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E068F2D574AA2000BA618 /* LoginVC.swift */; };
+		F57E06922D574AB3000BA618 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57E06912D574AB3000BA618 /* LoginVC.xib */; };
+		F57E069A2D577CAC000BA618 /* OnbroadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E06982D577CAC000BA618 /* OnbroadCell.swift */; };
+		F57E069B2D577CAC000BA618 /* OnbroadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57E06992D577CAC000BA618 /* OnbroadCell.xib */; };
+		F57E069E2D579B50000BA618 /* DefaultActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E069D2D579B50000BA618 /* DefaultActionBar.swift */; };
+		F57E06A02D579B64000BA618 /* DefaultActionBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57E069F2D579B64000BA618 /* DefaultActionBar.xib */; };
+		F5F89BE02D57BDDC007307F0 /* InputBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F89BDF2D57BDDC007307F0 /* InputBorder.swift */; };
+		F5F89BE22D57BE4D007307F0 /* InputBorder.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F89BE12D57BE4D007307F0 /* InputBorder.xib */; };
+		F5F89BE52D57C9C9007307F0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F5F89BE42D57C9C9007307F0 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F57E066E2D57449B000BA618 /* Watchify-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watchify-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57E06712D57449B000BA618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F57E06732D57449B000BA618 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F57E06752D57449B000BA618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F57E06782D57449B000BA618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F57E067A2D57449C000BA618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F57E067D2D57449C000BA618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F57E067F2D57449C000BA618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57E06862D57456F000BA618 /* OnbroadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbroadVC.swift; sourceTree = "<group>"; };
+		F57E06882D57457A000BA618 /* OnbroadVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnbroadVC.xib; sourceTree = "<group>"; };
+		F57E068B2D574910000BA618 /* UIButton+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Border.swift"; sourceTree = "<group>"; };
+		F57E068F2D574AA2000BA618 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F57E06912D574AB3000BA618 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		F57E06982D577CAC000BA618 /* OnbroadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnbroadCell.swift; sourceTree = "<group>"; };
+		F57E06992D577CAC000BA618 /* OnbroadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnbroadCell.xib; sourceTree = "<group>"; };
+		F57E069D2D579B50000BA618 /* DefaultActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultActionBar.swift; sourceTree = "<group>"; };
+		F57E069F2D579B64000BA618 /* DefaultActionBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultActionBar.xib; sourceTree = "<group>"; };
+		F5F89BDF2D57BDDC007307F0 /* InputBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBorder.swift; sourceTree = "<group>"; };
+		F5F89BE12D57BE4D007307F0 /* InputBorder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputBorder.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F89BE52D57C9C9007307F0 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +76,72 @@
 		F57E06702D57449B000BA618 /* Watchify-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				F57E069C2D579B31000BA618 /* Base */,
+				F57E068A2D5748FA000BA618 /* Category */,
+				F57E06852D57454E000BA618 /* Views */,
 				F57E06712D57449B000BA618 /* AppDelegate.swift */,
 				F57E06732D57449B000BA618 /* SceneDelegate.swift */,
-				F57E06752D57449B000BA618 /* ViewController.swift */,
-				F57E06772D57449B000BA618 /* Main.storyboard */,
 				F57E067A2D57449C000BA618 /* Assets.xcassets */,
 				F57E067C2D57449C000BA618 /* LaunchScreen.storyboard */,
 				F57E067F2D57449C000BA618 /* Info.plist */,
 			);
 			path = "Watchify-Swift";
+			sourceTree = "<group>";
+		};
+		F57E06852D57454E000BA618 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F57E068E2D574A95000BA618 /* LoginVC */,
+				F57E068D2D574A7C000BA618 /* OnbroadVC */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F57E068A2D5748FA000BA618 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F57E068B2D574910000BA618 /* UIButton+Border.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F57E068D2D574A7C000BA618 /* OnbroadVC */ = {
+			isa = PBXGroup;
+			children = (
+				F57E06932D5750DD000BA618 /* Component */,
+				F57E06862D57456F000BA618 /* OnbroadVC.swift */,
+				F57E06882D57457A000BA618 /* OnbroadVC.xib */,
+			);
+			path = OnbroadVC;
+			sourceTree = "<group>";
+		};
+		F57E068E2D574A95000BA618 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				F57E068F2D574AA2000BA618 /* LoginVC.swift */,
+				F57E06912D574AB3000BA618 /* LoginVC.xib */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		F57E06932D5750DD000BA618 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F57E06982D577CAC000BA618 /* OnbroadCell.swift */,
+				F57E06992D577CAC000BA618 /* OnbroadCell.xib */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F57E069C2D579B31000BA618 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F57E069D2D579B50000BA618 /* DefaultActionBar.swift */,
+				F57E069F2D579B64000BA618 /* DefaultActionBar.xib */,
+				F5F89BDF2D57BDDC007307F0 /* InputBorder.swift */,
+				F5F89BE12D57BE4D007307F0 /* InputBorder.xib */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +160,9 @@
 			dependencies = (
 			);
 			name = "Watchify-Swift";
+			packageProductDependencies = (
+				F5F89BE42D57C9C9007307F0 /* IQKeyboardManagerSwift */,
+			);
 			productName = "Watchify-Swift";
 			productReference = F57E066E2D57449B000BA618 /* Watchify-Swift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +191,9 @@
 				Base,
 			);
 			mainGroup = F57E06652D57449B000BA618;
+			packageReferences = (
+				F5F89BE32D57C9C9007307F0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = F57E066F2D57449B000BA618 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,8 +209,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F57E067E2D57449C000BA618 /* LaunchScreen.storyboard in Resources */,
+				F57E06892D57457A000BA618 /* OnbroadVC.xib in Resources */,
+				F57E06922D574AB3000BA618 /* LoginVC.xib in Resources */,
+				F57E06A02D579B64000BA618 /* DefaultActionBar.xib in Resources */,
+				F57E069B2D577CAC000BA618 /* OnbroadCell.xib in Resources */,
 				F57E067B2D57449C000BA618 /* Assets.xcassets in Resources */,
-				F57E06792D57449B000BA618 /* Main.storyboard in Resources */,
+				F5F89BE22D57BE4D007307F0 /* InputBorder.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +225,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F57E06762D57449B000BA618 /* ViewController.swift in Sources */,
+				F57E06872D57456F000BA618 /* OnbroadVC.swift in Sources */,
 				F57E06722D57449B000BA618 /* AppDelegate.swift in Sources */,
+				F5F89BE02D57BDDC007307F0 /* InputBorder.swift in Sources */,
 				F57E06742D57449B000BA618 /* SceneDelegate.swift in Sources */,
+				F57E069A2D577CAC000BA618 /* OnbroadCell.swift in Sources */,
+				F57E068C2D574910000BA618 /* UIButton+Border.swift in Sources */,
+				F57E069E2D579B50000BA618 /* DefaultActionBar.swift in Sources */,
+				F57E06902D574AA2000BA618 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F57E06772D57449B000BA618 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F57E06782D57449B000BA618 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F57E067C2D57449C000BA618 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -297,9 +381,9 @@
 				INFOPLIST_FILE = "Watchify-Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +409,9 @@
 				INFOPLIST_FILE = "Watchify-Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5F89BE32D57C9C9007307F0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5F89BE42D57C9C9007307F0 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5F89BE32D57C9C9007307F0 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F57E06662D57449B000BA618 /* Project object */;
 }

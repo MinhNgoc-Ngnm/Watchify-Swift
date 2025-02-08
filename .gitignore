@@ -1,0 +1,47 @@
+# =========================
+# Xcode và iOS Build Files
+# =========================
+DerivedData/
+build/
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# =========================
+# Storyboard và Interface Builder
+# =========================
+*.storyboardc       # File compiled từ storyboard (không cần push)
+*.nib               # File compiled từ XIB (chỉ cần file .xib gốc)
+
+# =========================
+# CocoaPods
+# =========================
+Pods/
+Podfile.lock
+
+# =========================
+# Carthage (nếu dùng)
+# =========================
+Carthage/
+
+# =========================
+# Swift Package Manager (SPM)
+# =========================
+.swiftpm/
+Package.resolved
+
+# =========================
+# Tài nguyên Cache và Logs
+# =========================
+*.DS_Store           # File ẩn của macOS
+*.log                # Log file
+*.tmp                # File tạm thời
+*.swp                # File tạm của trình soạn thảo (Vim...)
+
+# =========================
+# Cấu hình cá nhân
+# =========================
+*.env
+*.idea/
+*.vscode/
