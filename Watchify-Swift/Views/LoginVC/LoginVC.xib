@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Watchify_Swift" customModuleProvider="target">
             <connections>
                 <outlet property="actionBarOL" destination="Lg4-on-2ee" id="nTK-lM-fhF"/>
+                <outlet property="passWorldOL" destination="FcT-PM-zBF" id="Jqn-hq-XIO"/>
                 <outlet property="userNameOL" destination="KhG-n8-eF0" id="MrF-oZ-vRA"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0kP-kC-kgW"/>
             </connections>
@@ -60,22 +61,184 @@
                             <color key="value" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Tài khoản"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="imageBtn" value="xmark.circle" catalog="system"/>
                     </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FcT-PM-zBF" customClass="InputBorder" customModule="Watchify_Swift" customModuleProvider="target">
+                    <rect key="frame" x="32" y="341" width="329" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="IEr-bb-AEr"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="inputBg">
+                            <color key="value" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Mật khẩu"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="imageBtn" value="eye" catalog="system"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmJ-4q-hHa">
+                    <rect key="frame" x="32" y="397" width="329" height="40"/>
+                    <color key="backgroundColor" red="0.82352941176470584" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ag8-Fg-fCM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Đăng nhập"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hoặc đăng nhập bằng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-42-D5o">
+                    <rect key="frame" x="126.33333333333333" y="461" width="140.33333333333337" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.69019607843137254" green="0.69019607843137254" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="t6c-gD-dev">
+                    <rect key="frame" x="80.666666666666686" y="502" width="232" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cf-ud-kLK">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Hgh-J9-GKN"/>
+                                <constraint firstAttribute="height" constant="40" id="RjT-AF-HoC"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="4G"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="120-2M-KaX">
+                            <rect key="frame" x="63.999999999999986" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="mpR-Fh-Wso"/>
+                                <constraint firstAttribute="height" constant="40" id="sl9-zL-WD7"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Google"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTI-im-hcn">
+                            <rect key="frame" x="128" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="WLe-Jr-8CK"/>
+                                <constraint firstAttribute="height" constant="40" id="mQC-zy-IoP"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Facebook"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qe-hQ-puk">
+                            <rect key="frame" x="192" y="0.0" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="2nd-Tp-PrC"/>
+                                <constraint firstAttribute="width" constant="40" id="nxx-Zy-aMP"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="Apple"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nUm-LR-DyC"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Bằng việc đăng nhập, bạn đã đồng ý với" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgw-Ri-wGQ">
+                    <rect key="frame" x="100" y="788" width="193" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.396078431372549" green="0.40784313725490196" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kul-Ve-t4U">
+                    <rect key="frame" x="121" y="794" width="151" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="tintColor" red="1" green="0.81960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Điều khoản sử dụng của Myclip">
+                        <color key="titleColor" red="1" green="0.81960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="popUpTapHandle:" destination="-1" eventType="touchUpInside" id="Sw4-F0-aVT"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNV-fR-oXE">
+                    <rect key="frame" x="0.0" y="550" width="393" height="234.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="G4V-BA-ZUS">
+                            <rect key="frame" x="109.66666666666667" y="102.66666666666663" width="173.66666666666663" height="29"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhg-q1-YG3">
+                                    <rect key="frame" x="0.0" y="0.0" width="57" height="29"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Đăng ký">
+                                        <color key="titleColor" red="0.82352941176470584" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-uc-XBO">
+                                    <rect key="frame" x="60.999999999999986" y="0.0" width="4.6666666666666714" height="29"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" red="0.82352941176470584" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oy-gN-vYY">
+                                    <rect key="frame" x="69.666666666666671" y="0.0" width="104.00000000000001" height="29"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Quên mật khẩu">
+                                        <color key="titleColor" red="0.82352941176470584" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="G4V-BA-ZUS" firstAttribute="centerX" secondItem="KNV-fR-oXE" secondAttribute="centerX" id="b2z-37-Z7c"/>
+                        <constraint firstItem="G4V-BA-ZUS" firstAttribute="centerY" secondItem="KNV-fR-oXE" secondAttribute="centerY" id="qvi-cZ-Yc6"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Xpv-m8-g6w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2Pl-JE-fzK"/>
+                <constraint firstItem="FcT-PM-zBF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="53R-g3-krr"/>
+                <constraint firstItem="kul-Ve-t4U" firstAttribute="firstBaseline" secondItem="Qgw-Ri-wGQ" secondAttribute="baseline" constant="12" symbolType="layoutAnchor" id="5de-4k-8iO"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KhG-n8-eF0" secondAttribute="trailing" constant="32" id="6io-CZ-9R2"/>
+                <constraint firstItem="SmJ-4q-hHa" firstAttribute="top" secondItem="FcT-PM-zBF" secondAttribute="bottom" constant="16" id="ECo-7B-38z"/>
+                <constraint firstItem="Qgw-Ri-wGQ" firstAttribute="firstBaseline" secondItem="KNV-fR-oXE" secondAttribute="baseline" constant="13.5" symbolType="layoutAnchor" id="EfO-5Y-qD8"/>
                 <constraint firstItem="Lg4-on-2ee" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FJN-Kz-jUf"/>
+                <constraint firstItem="KNV-fR-oXE" firstAttribute="firstBaseline" secondItem="t6c-gD-dev" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="FsG-UN-6EQ"/>
+                <constraint firstItem="t6c-gD-dev" firstAttribute="top" secondItem="gLf-42-D5o" secondAttribute="bottom" constant="24" id="Nn5-1o-NEh"/>
+                <constraint firstItem="kul-Ve-t4U" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RBK-0W-5xp"/>
+                <constraint firstItem="SmJ-4q-hHa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="RGm-Po-sOT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kul-Ve-t4U" secondAttribute="bottom" id="Rci-Dl-R29"/>
+                <constraint firstItem="Qgw-Ri-wGQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aqz-ga-pbN"/>
                 <constraint firstItem="8m3-sr-AVk" firstAttribute="top" secondItem="Xpv-m8-g6w" secondAttribute="bottom" constant="10" id="c0J-Y8-ICb"/>
+                <constraint firstItem="t6c-gD-dev" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cES-Ql-rdo"/>
+                <constraint firstItem="FcT-PM-zBF" firstAttribute="top" secondItem="KhG-n8-eF0" secondAttribute="bottom" constant="16" id="cdi-rP-Ers"/>
                 <constraint firstItem="KhG-n8-eF0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="dWe-2u-ft2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KNV-fR-oXE" secondAttribute="trailing" id="ecN-75-TgD"/>
                 <constraint firstItem="Lg4-on-2ee" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="gMI-D6-5h9"/>
+                <constraint firstItem="gLf-42-D5o" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hCe-JW-7iK"/>
+                <constraint firstItem="KNV-fR-oXE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iuu-Q2-n4l"/>
                 <constraint firstItem="wsL-mz-qAg" firstAttribute="firstBaseline" secondItem="8m3-sr-AVk" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="jvo-WJ-avu"/>
                 <constraint firstItem="8m3-sr-AVk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nSG-C0-EFr"/>
                 <constraint firstItem="KhG-n8-eF0" firstAttribute="top" secondItem="wsL-mz-qAg" secondAttribute="bottom" constant="40" id="okt-2S-ic4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FcT-PM-zBF" secondAttribute="trailing" constant="32" id="tEb-ay-jg7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SmJ-4q-hHa" secondAttribute="trailing" constant="32" id="tMt-2m-FgQ"/>
                 <constraint firstItem="wsL-mz-qAg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="u3r-BY-QMD"/>
+                <constraint firstItem="gLf-42-D5o" firstAttribute="top" secondItem="SmJ-4q-hHa" secondAttribute="bottom" constant="24" id="vSZ-Ft-Ke4"/>
                 <constraint firstItem="Xpv-m8-g6w" firstAttribute="top" secondItem="Lg4-on-2ee" secondAttribute="bottom" id="yW5-eO-gea"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Lg4-on-2ee" secondAttribute="trailing" id="zwh-W4-bTG"/>
             </constraints>
@@ -83,6 +246,12 @@
         </view>
     </objects>
     <resources>
+        <image name="4G" width="40.333332061767578" height="40"/>
+        <image name="Apple" width="40.333332061767578" height="40"/>
+        <image name="Facebook" width="40.333332061767578" height="40"/>
+        <image name="Google" width="40.333332061767578" height="40"/>
         <image name="Logo" width="64" height="64"/>
+        <image name="eye" catalog="system" width="128" height="79"/>
+        <image name="xmark.circle" catalog="system" width="128" height="123"/>
     </resources>
 </document>

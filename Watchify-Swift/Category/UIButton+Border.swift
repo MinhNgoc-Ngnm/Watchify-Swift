@@ -10,7 +10,6 @@ import UIKit
 
 extension UIButton {
     
-    
     @IBInspectable var borderRadius: CGFloat {
         get {
             return layer.cornerRadius
@@ -19,4 +18,5 @@ extension UIButton {
             layer.cornerRadius = newValue
         }
     }
+    
 }
