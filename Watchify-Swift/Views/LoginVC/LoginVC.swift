@@ -25,8 +25,17 @@ class LoginVC: UIViewController {
         self.passWorldOL.delegate = self
     }
     @IBAction func popUpTapHandle(_ sender: UIButton) {
-//        let popupVC = PopupVC()
-//        self.present(popupVC, animated: true)
+        let popupVC = PopupVC()
+        popupVC.modalPresentationStyle = UIModalPresentationStyle.overFullScreen;
+        self.present(popupVC, animated: true)
+    }
+    @IBAction func submitTaphandle(_ sender: UIButton) {
+        LoadingManager.shared.showLoading()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            LoadingManager.shared.hideLoading()
+            let homeVC = HomeVC()
+            self.navigationController?.pushViewController(homeVC, animated: true)
+        }
     }
 }
 

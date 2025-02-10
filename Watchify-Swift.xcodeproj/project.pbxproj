@@ -20,6 +20,16 @@
 		F57E069B2D577CAC000BA618 /* OnbroadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57E06992D577CAC000BA618 /* OnbroadCell.xib */; };
 		F57E069E2D579B50000BA618 /* DefaultActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57E069D2D579B50000BA618 /* DefaultActionBar.swift */; };
 		F57E06A02D579B64000BA618 /* DefaultActionBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F57E069F2D579B64000BA618 /* DefaultActionBar.xib */; };
+		F58298232D598B3600BB0174 /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58298212D598B3600BB0174 /* PopupVC.swift */; };
+		F58298242D598B3600BB0174 /* PopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58298222D598B3600BB0174 /* PopupVC.xib */; };
+		F58298262D598F9800BB0174 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58298252D598F9800BB0174 /* UIView+Border.swift */; };
+		F58298282D59A50400BB0174 /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58298272D59A50400BB0174 /* LoadingManager.swift */; };
+		F582982C2D59E8E100BB0174 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F582982A2D59E8E100BB0174 /* HomeVC.swift */; };
+		F582982D2D59E8E100BB0174 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F582982B2D59E8E100BB0174 /* HomeVC.xib */; };
+		F58298302D59E94D00BB0174 /* HomeActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F582982F2D59E94D00BB0174 /* HomeActionBar.swift */; };
+		F58298322D59EA1100BB0174 /* HomeActionBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58298312D59EA1100BB0174 /* HomeActionBar.xib */; };
+		F58298362D5A01F800BB0174 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58298352D5A01F800BB0174 /* TabBar.swift */; };
+		F58298382D5A057400BB0174 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58298372D5A057400BB0174 /* UIColor+Hex.swift */; };
 		F5F89BE02D57BDDC007307F0 /* InputBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F89BDF2D57BDDC007307F0 /* InputBorder.swift */; };
 		F5F89BE22D57BE4D007307F0 /* InputBorder.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F89BE12D57BE4D007307F0 /* InputBorder.xib */; };
 		F5F89BE52D57C9C9007307F0 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F5F89BE42D57C9C9007307F0 /* IQKeyboardManagerSwift */; };
@@ -41,6 +51,16 @@
 		F57E06992D577CAC000BA618 /* OnbroadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnbroadCell.xib; sourceTree = "<group>"; };
 		F57E069D2D579B50000BA618 /* DefaultActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultActionBar.swift; sourceTree = "<group>"; };
 		F57E069F2D579B64000BA618 /* DefaultActionBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultActionBar.xib; sourceTree = "<group>"; };
+		F58298212D598B3600BB0174 /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
+		F58298222D598B3600BB0174 /* PopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupVC.xib; sourceTree = "<group>"; };
+		F58298252D598F9800BB0174 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		F58298272D59A50400BB0174 /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
+		F582982A2D59E8E100BB0174 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F582982B2D59E8E100BB0174 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		F582982F2D59E94D00BB0174 /* HomeActionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeActionBar.swift; sourceTree = "<group>"; };
+		F58298312D59EA1100BB0174 /* HomeActionBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeActionBar.xib; sourceTree = "<group>"; };
+		F58298352D5A01F800BB0174 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		F58298372D5A057400BB0174 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		F5F89BDF2D57BDDC007307F0 /* InputBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputBorder.swift; sourceTree = "<group>"; };
 		F5F89BE12D57BE4D007307F0 /* InputBorder.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputBorder.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +111,8 @@
 		F57E06852D57454E000BA618 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F58298332D5A01CD00BB0174 /* TabBar */,
+				F58298292D59E8C900BB0174 /* HomeVC */,
 				F57E068E2D574A95000BA618 /* LoginVC */,
 				F57E068D2D574A7C000BA618 /* OnbroadVC */,
 			);
@@ -101,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				F57E068B2D574910000BA618 /* UIButton+Border.swift */,
+				F58298252D598F9800BB0174 /* UIView+Border.swift */,
+				F58298372D5A057400BB0174 /* UIColor+Hex.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -118,6 +142,7 @@
 		F57E068E2D574A95000BA618 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
+				F58298202D598B1600BB0174 /* Component */,
 				F57E068F2D574AA2000BA618 /* LoginVC.swift */,
 				F57E06912D574AB3000BA618 /* LoginVC.xib */,
 			);
@@ -140,8 +165,53 @@
 				F57E069F2D579B64000BA618 /* DefaultActionBar.xib */,
 				F5F89BDF2D57BDDC007307F0 /* InputBorder.swift */,
 				F5F89BE12D57BE4D007307F0 /* InputBorder.xib */,
+				F58298272D59A50400BB0174 /* LoadingManager.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		F58298202D598B1600BB0174 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F58298212D598B3600BB0174 /* PopupVC.swift */,
+				F58298222D598B3600BB0174 /* PopupVC.xib */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F58298292D59E8C900BB0174 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				F582982E2D59E92200BB0174 /* Component */,
+				F582982A2D59E8E100BB0174 /* HomeVC.swift */,
+				F582982B2D59E8E100BB0174 /* HomeVC.xib */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		F582982E2D59E92200BB0174 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F582982F2D59E94D00BB0174 /* HomeActionBar.swift */,
+				F58298312D59EA1100BB0174 /* HomeActionBar.xib */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		F58298332D5A01CD00BB0174 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F58298342D5A01DE00BB0174 /* Component */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F58298342D5A01DE00BB0174 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F58298352D5A01F800BB0174 /* TabBar.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +278,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58298322D59EA1100BB0174 /* HomeActionBar.xib in Resources */,
 				F57E067E2D57449C000BA618 /* LaunchScreen.storyboard in Resources */,
+				F58298242D598B3600BB0174 /* PopupVC.xib in Resources */,
 				F57E06892D57457A000BA618 /* OnbroadVC.xib in Resources */,
 				F57E06922D574AB3000BA618 /* LoginVC.xib in Resources */,
+				F582982D2D59E8E100BB0174 /* HomeVC.xib in Resources */,
 				F57E06A02D579B64000BA618 /* DefaultActionBar.xib in Resources */,
 				F57E069B2D577CAC000BA618 /* OnbroadCell.xib in Resources */,
 				F57E067B2D57449C000BA618 /* Assets.xcassets in Resources */,
@@ -226,13 +299,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F57E06872D57456F000BA618 /* OnbroadVC.swift in Sources */,
+				F58298302D59E94D00BB0174 /* HomeActionBar.swift in Sources */,
 				F57E06722D57449B000BA618 /* AppDelegate.swift in Sources */,
 				F5F89BE02D57BDDC007307F0 /* InputBorder.swift in Sources */,
 				F57E06742D57449B000BA618 /* SceneDelegate.swift in Sources */,
 				F57E069A2D577CAC000BA618 /* OnbroadCell.swift in Sources */,
 				F57E068C2D574910000BA618 /* UIButton+Border.swift in Sources */,
+				F58298232D598B3600BB0174 /* PopupVC.swift in Sources */,
 				F57E069E2D579B50000BA618 /* DefaultActionBar.swift in Sources */,
+				F58298382D5A057400BB0174 /* UIColor+Hex.swift in Sources */,
+				F58298262D598F9800BB0174 /* UIView+Border.swift in Sources */,
+				F582982C2D59E8E100BB0174 /* HomeVC.swift in Sources */,
 				F57E06902D574AA2000BA618 /* LoginVC.swift in Sources */,
+				F58298282D59A50400BB0174 /* LoadingManager.swift in Sources */,
+				F58298362D5A01F800BB0174 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3GN55NJXRT;
+				DEVELOPMENT_TEAM = YC6Y274PCP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Watchify-Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -404,7 +484,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3GN55NJXRT;
+				DEVELOPMENT_TEAM = YC6Y274PCP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Watchify-Swift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

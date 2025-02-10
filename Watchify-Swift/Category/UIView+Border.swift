@@ -1,16 +1,15 @@
 //
-//  UIButton+Border.swift
+//  UIView+Border.swift
 //  Watchify-Swift
 //
-//  Created by Minh Ngọc on 08/02/2025.
+//  Created by Minh Ngọc on 10/02/2025.
 //
 
 import Foundation
 import UIKit
 
-extension UIButton {
-    
-    @IBInspectable override var borderRadius: CGFloat {
+extension UIView {
+    @IBInspectable var borderRadius: CGFloat {
         get {
             return layer.cornerRadius
         }
@@ -18,5 +17,4 @@ extension UIButton {
             layer.cornerRadius = newValue
         }
     }
-    
 }

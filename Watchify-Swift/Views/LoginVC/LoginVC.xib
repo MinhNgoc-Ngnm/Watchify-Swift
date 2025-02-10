@@ -99,6 +99,9 @@
                             <real key="value" value="10"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="submitTaphandle:" destination="-1" eventType="touchUpInside" id="QHZ-TF-alc"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hoặc đăng nhập bằng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLf-42-D5o">
                     <rect key="frame" x="126.33333333333333" y="461" width="140.33333333333337" height="17"/>
@@ -216,7 +219,7 @@
                 <constraint firstItem="kul-Ve-t4U" firstAttribute="firstBaseline" secondItem="Qgw-Ri-wGQ" secondAttribute="baseline" constant="12" symbolType="layoutAnchor" id="5de-4k-8iO"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KhG-n8-eF0" secondAttribute="trailing" constant="32" id="6io-CZ-9R2"/>
                 <constraint firstItem="SmJ-4q-hHa" firstAttribute="top" secondItem="FcT-PM-zBF" secondAttribute="bottom" constant="16" id="ECo-7B-38z"/>
-                <constraint firstItem="Qgw-Ri-wGQ" firstAttribute="firstBaseline" secondItem="KNV-fR-oXE" secondAttribute="baseline" constant="13.5" symbolType="layoutAnchor" id="EfO-5Y-qD8"/>
+                <constraint firstItem="Qgw-Ri-wGQ" firstAttribute="firstBaseline" secondItem="KNV-fR-oXE" secondAttribute="baseline" constant="13.333333333333334" symbolType="layoutAnchor" id="EfO-5Y-qD8"/>
                 <constraint firstItem="Lg4-on-2ee" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FJN-Kz-jUf"/>
                 <constraint firstItem="KNV-fR-oXE" firstAttribute="firstBaseline" secondItem="t6c-gD-dev" secondAttribute="baseline" constant="8" symbolType="layoutAnchor" id="FsG-UN-6EQ"/>
                 <constraint firstItem="t6c-gD-dev" firstAttribute="top" secondItem="gLf-42-D5o" secondAttribute="bottom" constant="24" id="Nn5-1o-NEh"/>

@@ -75,14 +75,7 @@ class InputBorder: UIView {
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        self.loadView()
-        self.setUp()
-        self.setupHoverGesture()
-    }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
+        fatalError()
     }
     
     private func loadView() {
@@ -98,8 +91,6 @@ class InputBorder: UIView {
     private func setUp(){
         self.textFieldOL.delegate = self
         self.btnOL.isHidden = true
-        NotificationCenter.default.addObserver(self, selector: #selector(handleTextDidBeginEditing(_:)), name: UITextField.textDidBeginEditingNotification, object: textFieldOL)
-        NotificationCenter.default.addObserver(self, selector: #selector(handleTextDidEndEditing(_:)), name: UITextField.textDidEndEditingNotification, object: textFieldOL)
     }
     private func setupHoverGesture() {
         if #available(iOS 13.4, *) {
@@ -129,20 +120,6 @@ class InputBorder: UIView {
         }
     }
     
-    @objc private func handleTextDidBeginEditing(_ notification: Notification) {
-        self.btnOL.isHidden = false
-        self.inputViewOL.layer.borderWidth = 1
-        self.inputViewOL.layer.borderColor = UIColor.white.cgColor
-        self.delegate?.inputBorderDidBeginEditing(self, textField:self.textFieldOL)
-    }
-    
-    @objc private func handleTextDidEndEditing(_ notification: Notification){
-        self.btnOL.isHidden = true
-        self.inputViewOL.layer.borderWidth = 0
-        self.inputViewOL.layer.borderColor = nil
-        self.delegate?.inputBorderDidEndEditing(self, textField:self.textFieldOL)
-        
-    }
     private func updatePlaceholder() {
         if let placeholder = placeholder {
             textFieldOL.attributedPlaceholder = NSAttributedString(
@@ -152,6 +129,19 @@ class InputBorder: UIView {
         } else {
             textFieldOL.attributedPlaceholder = nil
         }
+    }
+    @IBAction func handleTextDidBeginEditing(_ sender: UITextField) {
+        self.btnOL.isHidden = false
+        self.inputViewOL.layer.borderWidth = 1
+        self.inputViewOL.layer.borderColor = UIColor.white.cgColor
+        self.delegate?.inputBorderDidBeginEditing(self, textField:self.textFieldOL)
+    }
+    @IBAction func handleTextDidEndEditing(_ sender: UITextField) {
+        self.btnOL.isHidden = true
+        self.inputViewOL.layer.borderWidth = 0
+        self.inputViewOL.layer.borderColor = nil
+        self.delegate?.inputBorderDidEndEditing(self, textField:self.textFieldOL)
+        
     }
 }
 

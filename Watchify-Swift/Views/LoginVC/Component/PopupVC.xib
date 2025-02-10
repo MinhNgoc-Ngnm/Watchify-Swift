@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupVC" customModule="Watchify_Swift" customModuleProvider="target">
+            <connections>
+                <outlet property="contentViewOL" destination="nPn-9p-L6d" id="RUZ-Zv-zKG"/>
+                <outlet property="overlayOL" destination="i5M-Pr-FkT" id="pqf-Pa-qLJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPn-9p-L6d">
+                    <rect key="frame" x="32" y="129" width="329" height="619"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Điều khoản sử dụng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INT-v8-xEg">
+                            <rect key="frame" x="16" y="16" width="297" height="20"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsd-SX-Xzd">
+                            <rect key="frame" x="16" y="52" width="297" height="459"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjP-z1-TuC">
+                                    <rect key="frame" x="0.0" y="8" width="297" height="2239"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <mutableString key="text">1. Quyền sở hữu Dịch vụ
+- Dịch vụ này được phát triển và sở hữu bởi Tập đoàn Công nghiệp - Viễn thông Quân đội, tất cả các quyền sở hữu trí tuệ liên quan đến Dịch vụ (bao gồm nhưng không giới hạn mã nguồn, hình ảnh, dữ liệu, thông tin, nội dung chứa đựng trong Dịch vụ; các sửa đổi bổ sung, cập nhật của Dịch vụ) và các tài liệu hướng dẫn liên quan (nếu có) sẽ thuộc quyền sở hữu duy nhất bởi Tập đoàn Công nghiệp - Viễn thông Quân đội và không cá nhân, tổ chức nào được phép sao chép, tái tạo, phân phối, hoặc hình thức khác xâm phạm tới quyền của chủ sở hữu nếu không có sự đồng ý và cho phép bằng văn bản của Tập đoàn Công nghiệp - Viễn thông Quân đội.
+- Để sử dụng Dịch vụ bạn phải tạo một tài khoản theo hướng dẫn của chúng tôi, bạn cam kết rằng việc sử dụng tài khoản phải tuân thủ các quy định của Tập đoàn Công nghiệp - Viễn thông Quân đội, đồng thời tất cả các thông tin bạn cung cấp cho chúng tôi là chính xác, đầy đủ tại thời điểm được yêu cầu. 
+- Mọi quyền lợi và nghĩa vụ của bạn sẽ căn cứ trên thông tin tài khoản của bạn đã đăng ký, do vậy nếu có bất kỳ thông tin sai lệch nào chúng tôi sẽ không chịu trách nhiệm trong trường hợp thông tin đó làm ảnh hướng hoặc hạn chế quyền lợi của bạn.
+- Với các khách hàng không có bất kỳ gói TV360 nào có thể xem các nội dung miễn phí trên TV360.
+- Bạn có quyền sử dụng Dịch vụ TV360 và các dịch vụ khác mà chúng tôi cung cấp, tuy nhiên việc sử dụng đó sẽ không bao gồm các hành vi sau đây nếu không có sự đồng ý bằng văn bản của Tập đoàn Công nghiệp - Viễn thông Quân đội:
++ Sao chép, chỉnh sửa, tái tạo ra sản phẩm mới hoặc phiên bản tái sinh trên cơ sở Dịch vụ TV360;
++ Bán, chuyển giao, cấp quyền lại, tiết lộ hoặc hình thức chuyển giao khác hoặc đưa một phần hoặc toàn bộ Dịch vụ TV360 cho bất kỳ bên thứ ba;
++ Sử dụng Dịch vụ TV360 để cung cấp dịch vụ cho bất kỳ bên thứ ba (tổ chức, cá nhân);
++ Di chuyển, xóa bỏ, thay đổi bất kỳ thông báo chính đáng hoặc dấu hiệu nào của Dịch vụ (bao gồm nhưng không giới hạn các tuyên bố về bản quyền);
++ Thiết kế lại, biên dịch, tháo gỡ, chỉnh sửa, đảo lộn thiết kế của Dịch vụ, hoặc nội dung Dịch vụ;
++ Thay đổi hoặc hủy bỏ trạng thái ban đầu của Dịch vụ;
++ Sử dụng Dịch vụ để thực hiện bất kỳ hành động gây hại cho hệ thống an ninh mạng của Tập đoàn Công nghiệp - Viễn thông Quân đội, bao gồm nhưng không giới hạn sử dụng dữ liệu hoặc truy cập vào máy chủ hệ thống mạng để xóa bỏ, chỉnh sửa và thêm các thông tin; phát tán các chương trình độc hại, virut hoặc thực hiện bất kỳ hành động nào khác nhằm gây hại hoặc phá hủy hệ thống mạng;
++ Đăng nhập và sử dụng Dịch vụ bằng một phần mềm tương thích của bên thứ ba hoặc hệ thống không được phát triển, cấp quyền hoặc chấp thuận bởi Tập đoàn Công nghiệp - Viễn thông Quân đội;
++ Sử dụng, bán, cho mượn, sao chép, chỉnh sửa, kết nối tới, phiên dịch, phát hành, công bố các thông tin;
++ Các hình thức vi phạm khác…
+
+2. Xử lý vi phạm
+- Trường hợp bạn vi phạm bất kỳ Quy định nào trong Thỏa thuận này, Tập đoàn Công nghiệp - Viễn thông Quân đội có quyền ngay lập tức khóa tài khoản của bạn và hoặc xóa bỏ toàn bộ các thông tin, nội dung vi phạm, đồng thời tùy thuộc vào tính chất, mức độ vi phạm bạn sẽ phải chịu trách nhiệm trước cơ quan có thẩm quyền, Tập đoàn Công nghiệp - Viễn thông Quân đội và bên thứ ba về mọi thiệt hại gây ra bởi hoặc xuất phát từ hành vi vi phạm của bạn.
+
+3. Thông tin về điều kiện giao dịch
+- Giới hạn về địa lý: sử dụng xem trên lãnh thổ nước Việt Nam.
+- Giới hạn về đối tượng sử dụng: chỉ áp dụng cho thuê bao di động mạng Viettel.
+- TV360 không có chính sách hoàn trả hoặc lấy lại tiền khi giao dịch mua gói cước đã được giao dịch.
+
+4. Thông tin vận chuyển và giao nhận 
+- Hình thức mua dịch vụ là trực tuyến trên Dịch vụ TV360. 
+- Dịch vụ được cung cấp theo thời gian thực, ngay khi thực hiện mua gói cước xong sẽ sử dụng được dịch vụ theo chính sách đã công bố.
+
+5. Thông tin về các phương thức thanh toán
+- Quý khách có thể xem miễn phí nội dung là các kênh truyền hình, phim truyện hay video do TV360 cung cấp. Nội dung các chương trình này có thể kèm thêm quảng cáo.
+- Đối với nội dung mất phí, khách hàng cần trả tiền trọn gói để xem các chương trình trong gói đó, chu kỳ tính theo ngày tuần hoặc tháng.
+- Khách hàng sẽ thanh toán một lần cho một gói cước để được xem toàn bộ nội dung trong gói cước đó với khoảng thời gian nhất định của gói cước.
+- Khi đăng ký gói cước, khách hàng sẽ được hưởng ưu đãi đặc biệt là “không mất phí Data 4G Viettel khi xem trên Dịch vụ TV360”.
+- Khi thực hiện đăng ký, khách hàng sẽ thực hiện 2 bước, cụ thể:
++ Bước 1: Yêu cầu Đăng Ký, hệ thống hiển thị popup thông báo gói cước, giá cước, chu kỳ gia hạn của dịch vụ và quyền lợi liên quan.
++ Bước 2: Xác Nhận đăng ký qua tin nhắn gửi lên đầu số 1331. Khi thực hiện thành công, hệ thống sẽ thông báo kết quả qua tin nhắn với đầy đủ thông tin gói cước, giá cước và chu kỳ gia hạn, quyền lợi liên quan khi sử dụng trên TV360.
+
+</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="vjP-z1-TuC" firstAttribute="leading" secondItem="18R-HA-jpO" secondAttribute="leading" id="0CB-G4-EXu"/>
+                                <constraint firstItem="vjP-z1-TuC" firstAttribute="trailing" secondItem="18R-HA-jpO" secondAttribute="trailing" id="fuS-Ln-h5i"/>
+                                <constraint firstItem="vjP-z1-TuC" firstAttribute="bottom" secondItem="18R-HA-jpO" secondAttribute="bottom" id="uYo-zA-f3K"/>
+                                <constraint firstItem="vjP-z1-TuC" firstAttribute="width" secondItem="4XS-VM-dzN" secondAttribute="width" id="wo0-i4-TXB"/>
+                                <constraint firstItem="vjP-z1-TuC" firstAttribute="top" secondItem="18R-HA-jpO" secondAttribute="top" constant="8" id="ydL-8H-YMb"/>
+                            </constraints>
+                            <viewLayoutGuide key="contentLayoutGuide" id="18R-HA-jpO"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="4XS-VM-dzN"/>
+                        </scrollView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcV-iw-MWR">
+                            <rect key="frame" x="16" y="563" width="297" height="40"/>
+                            <color key="backgroundColor" red="0.82352941176470584" green="0.12156862745098039" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Bbj-X3-RMC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Đồng ý"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionConfirmHandle:" destination="-1" eventType="touchUpInside" id="7ny-h8-UqS"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Điều khoản sử dụng của Myclip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jM8-2B-q3G">
+                            <rect key="frame" x="16" y="539" width="297" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="1" green="0.81960784313725488" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Bằng việc đăng nhập, bạn đã đồng ý với" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8n-7Q-WgM">
+                            <rect key="frame" x="16" y="527" width="297" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" red="0.54117647058823526" green="0.54509803921568623" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="lsd-SX-Xzd" firstAttribute="leading" secondItem="nPn-9p-L6d" secondAttribute="leading" constant="16" id="1CM-pW-24H"/>
+                        <constraint firstItem="lsd-SX-Xzd" firstAttribute="top" secondItem="INT-v8-xEg" secondAttribute="bottom" constant="16" id="B7K-XJ-5ma"/>
+                        <constraint firstAttribute="trailing" secondItem="hcV-iw-MWR" secondAttribute="trailing" constant="16" id="Cot-qO-5TT"/>
+                        <constraint firstAttribute="trailing" secondItem="D8n-7Q-WgM" secondAttribute="trailing" constant="16" id="Kuk-xm-DPF"/>
+                        <constraint firstItem="jM8-2B-q3G" firstAttribute="leading" secondItem="nPn-9p-L6d" secondAttribute="leading" constant="16" id="LJ3-xC-HCS"/>
+                        <constraint firstItem="hcV-iw-MWR" firstAttribute="leading" secondItem="nPn-9p-L6d" secondAttribute="leading" constant="16" id="MyB-SU-xgT"/>
+                        <constraint firstItem="D8n-7Q-WgM" firstAttribute="leading" secondItem="nPn-9p-L6d" secondAttribute="leading" constant="16" id="Tva-Cc-4jf"/>
+                        <constraint firstAttribute="trailing" secondItem="jM8-2B-q3G" secondAttribute="trailing" constant="16" id="Vaw-9i-xMj"/>
+                        <constraint firstAttribute="trailing" secondItem="lsd-SX-Xzd" secondAttribute="trailing" constant="16" id="e2J-cI-CR0"/>
+                        <constraint firstItem="INT-v8-xEg" firstAttribute="leading" secondItem="nPn-9p-L6d" secondAttribute="leading" constant="16" id="gWe-Ua-SUg"/>
+                        <constraint firstItem="INT-v8-xEg" firstAttribute="top" secondItem="nPn-9p-L6d" secondAttribute="top" constant="16" id="giw-L3-osr"/>
+                        <constraint firstAttribute="bottom" secondItem="hcV-iw-MWR" secondAttribute="bottom" constant="16" id="h1c-SG-QxD"/>
+                        <constraint firstItem="D8n-7Q-WgM" firstAttribute="top" secondItem="lsd-SX-Xzd" secondAttribute="bottom" constant="16" id="ie2-iW-B92"/>
+                        <constraint firstAttribute="trailing" secondItem="INT-v8-xEg" secondAttribute="trailing" constant="16" id="jqd-ev-Afh"/>
+                        <constraint firstItem="hcV-iw-MWR" firstAttribute="top" secondItem="jM8-2B-q3G" secondAttribute="bottom" constant="12" id="mi0-Ij-6ne"/>
+                        <constraint firstItem="jM8-2B-q3G" firstAttribute="firstBaseline" secondItem="D8n-7Q-WgM" secondAttribute="baseline" constant="13.666666666666666" symbolType="layoutAnchor" id="xEF-P6-c3r"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nPn-9p-L6d" secondAttribute="bottom" constant="70" id="2F4-oL-5T1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nPn-9p-L6d" secondAttribute="trailing" constant="32" id="3Hf-Ne-Mlk"/>
+                <constraint firstItem="nPn-9p-L6d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="HBl-og-N2m"/>
+                <constraint firstItem="nPn-9p-L6d" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="Ilg-ey-brn"/>
+            </constraints>
+            <point key="canvasLocation" x="-57.251908396946561" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>

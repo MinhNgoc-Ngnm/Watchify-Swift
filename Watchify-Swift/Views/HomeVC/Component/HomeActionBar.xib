@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeActionBar" customModule="Watchify_Swift" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="61"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="7SJ-f7-noL">
+                    <rect key="frame" x="16" y="14.666666666666664" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="H45-GI-Whk"/>
+                        <constraint firstAttribute="height" constant="32" id="WE3-BE-ZDL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Myclip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCI-ut-Xcf">
+                    <rect key="frame" x="56" y="18.666666666666668" width="62" height="24.000000000000004"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Tkl-SG-Rgw">
+                    <rect key="frame" x="221" y="18.666666666666668" width="156" height="24.000000000000004"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQR-Pt-VV8">
+                            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="1pw-yw-Yvl"/>
+                                <constraint firstAttribute="width" constant="24" id="LBm-sC-cLd"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="connect"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgq-Iz-cGg">
+                            <rect key="frame" x="44" y="0.0" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="TCk-CU-yGc"/>
+                                <constraint firstAttribute="height" constant="24" id="h89-9w-u3P"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="+"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pB9-A1-B1k">
+                            <rect key="frame" x="88" y="0.0" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="mGH-hz-ilm"/>
+                                <constraint firstAttribute="height" constant="24" id="pBn-X9-1ft"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="active"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoD-0U-LKn">
+                            <rect key="frame" x="132" y="0.0" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Ezh-a5-1mU"/>
+                                <constraint firstAttribute="width" constant="24" id="I5N-Ft-oGY"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="search"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gCI-ut-Xcf" firstAttribute="leading" secondItem="7SJ-f7-noL" secondAttribute="trailing" constant="8" id="9gW-cm-Yww"/>
+                <constraint firstItem="Tkl-SG-Rgw" firstAttribute="centerY" secondItem="7SJ-f7-noL" secondAttribute="centerY" id="PFr-dj-Izh"/>
+                <constraint firstItem="7SJ-f7-noL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TFC-8a-qzp"/>
+                <constraint firstAttribute="trailing" secondItem="Tkl-SG-Rgw" secondAttribute="trailing" constant="16" id="iMI-F7-01A"/>
+                <constraint firstItem="7SJ-f7-noL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="pbP-nn-fD4"/>
+                <constraint firstItem="gCI-ut-Xcf" firstAttribute="centerY" secondItem="7SJ-f7-noL" secondAttribute="centerY" id="r9a-X3-7gZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-16.030534351145036" y="-258.80281690140845"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="+" width="24" height="24"/>
+        <image name="Logo" width="64" height="64"/>
+        <image name="active" width="24" height="24"/>
+        <image name="connect" width="21.666666030883789" height="17.666666030883789"/>
+        <image name="search" width="24" height="24"/>
+    </resources>
+</document>

@@ -17,5 +17,7 @@ class OnbroadCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    override func prepareForReuse() {
+        self.image.image = nil
+    }
 }
